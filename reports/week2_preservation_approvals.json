@@ -6,6 +6,20 @@
       "reason": "First ten dependency lines match the original SHA-256 exactly. Added ipykernel, nbformat and ipywidgets support user-added Week 2 notebook cells. Duplicate Streamlit constraint is identical and has no dependency-resolution effect; preserved as user content.",
       "authorization": "User requested preserving advanced notebook cells and allowing verified legitimate Week 2 changes; reviewed and accepted within that scope.",
       "review_evidence": "SHA256 of first 10 lines equals original checksum. No original dependency constraints changed."
+    },
+    "README.md": {
+      "original_sha256": "751470d964fbfc38e73a88fa8f60b980705ae04de5cafd45ee43feb127832be3",
+      "approved_sha256": "a97c1c68819fd3bcfd37909cb64870305297e21b988c3df0e37c6921703ec1a5",
+      "reason": "Consolidated legacy README.md and FINAL_README.md into a single professional Vietnamese project guide for GitHub deployment.",
+      "authorization": "User explicitly requested consolidating documentation into README.md and removing redundant docs for GitHub release.",
+      "review_evidence": "Includes complete environment setup, VS Code notebook execution, Streamlit web demo, Kaggle dataset provenance, and troubleshooting instructions."
+    },
+    ".gitignore": {
+      "original_sha256": "5214c87066f8f3b5fee0544c69225cd0d7c7190f0970258e02193f3d42aa04bc",
+      "approved_sha256": "f2cecd75cff0bb69de96ad49f43a0e7e1673b17813da3657ccb8d9792d6b6323",
+      "reason": "Optimized .gitignore to exclude Python cache, .venv, IDE files, OS temp files, secrets while allowing essential trained model artifacts and processed split data for instant reproduction.",
+      "authorization": "User explicitly requested optimizing .gitignore, protecting sensitive secrets, and ensuring cloned repository can run website and notebook out-of-the-box.",
+      "review_evidence": "Excluded raw data, virtualenv, and secrets; included essential model artifacts and processed data for instant reproduction."
     }
   }
 }

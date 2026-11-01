@@ -1,11 +1,53 @@
-.venv/
+# Byte-compiled / optimized / DLL files
 __pycache__/
+*.py[cod]
+*$py.class
+
+# Caches and test artifacts
 .pytest_cache/
-*.pyc
+.coverage
+htmlcov/
+.cache/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables & secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Operating System files
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store
+
+# Temporary & Log files
+*.tmp
+
+# Raw Kaggle competition datasets & root duplicates (protect competition data terms)
 data/raw/*.csv
-data/processed/*.csv
 /train.csv
 /test.csv
 /sample_submission.csv
-artifacts/*
+
+# Allow necessary models, metadata, and processed datasets for out-of-the-box execution
+!artifacts/house_price_model.joblib
+!artifacts/model_metadata.json
+!artifacts/xgboost_baseline.joblib
+!artifacts/xgboost_baseline.metadata.json
 !artifacts/.gitkeep
+!data/processed/*.csv

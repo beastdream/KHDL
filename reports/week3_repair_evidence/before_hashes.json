@@ -1,0 +1,21 @@
+{
+  "requirements.txt": "7b9a3c61708810ef3fe2e467905c746b1a1c4b43e1df03f15bbeca4b42328278",
+  "src/week1.py": "9ff7049430ee114f9e2c2b0eec4909a49a4b760203c4da8bd56085f16159180c",
+  "reports/week2_preservation_check.json": "d7c8a1cfaf3223d7369857095eb12964a08bf02e7a571d0e721a33a5bf0f351f",
+  "reports/week2_pytest.xml": "1f22b8df1966385064524fbc714346b669a83f0f5da28c62252a4368623c0a79",
+  "reports/week3_status.json": "4e295cd1ad7a2128ddbca7ea4efb12f1071e7c736c0d408560ed8c4821c66b17",
+  "reports/WEEK_3_REPORT.md": "b4406b237bfe11f8c49aaa60b06b3f50f427c0ebc95c7eaaebf9aabdf304f976",
+  "reports/week2_preservation_before.json": "fd9828ffc7c6e4218900d529bdcdfa2e20fdec9adf6b9aca9e3d9d779b544c2c",
+  "reports/week2_preservation_approvals.json": "8412a4e9e4e99eee9da28a022b5be004376515541de708e1261c624256af9ae2",
+  "artifacts/model_metadata.json": "335b166286b3407eacf2a962c2f13dea9d0e1d672bcbe219c03944d5797347d4",
+  "artifacts/house_price_model.joblib": "133f798a66927bf9b6be827bf733c6007a3b0779b82b2f43f6c881f648205c71",
+  "artifacts/xgboost_baseline.joblib": "15ef6d2e12c372a9e9e3fc01c0b77649aac11b21c4837fdaab5a64cde47f7281",
+  "reports/data_split.json": "301250176355b532a180f4c2040d1bb27a3efdf935c377197f0620bd68adb1bc",
+  "notebooks/house_price_eda.ipynb": "b8057d44176b039c4b03ecfdce5577d203872d771b48ee4210a0799b57724f26",
+  "src/data/audit_dataset.py": "ce14b47ace37bfe216a5b455845732ca4ab6d215f7cf84d248ef50d614351962",
+  "src/data/split_dataset.py": "2e0e3916eb77aec9ecba996ff322163169852f6ed11390f6954b5cdbc188d5ef",
+  "src/data/week2_inputs.py": "dbcd9b2e2f79ec4a488bed9f3da8332e194041c2cb894f171bf56fa634518026",
+  "src/data/week3_inputs.py": "159d2105b11c4700be54de1a48d0d046acd6cce29ab2f6b785e7cdaeb2b48ed5",
+  "src/utils/preservation.py": "35be426dc9ce9bbc73c4c28345aa7dbc98a6889d722238ddff53435231e592a9",
+  "tests/test_model.py": "a3f6045704e0c1fb5c823ee5ac1acce373eb80c69f29a61f3eba72fb14de03f9"
+}

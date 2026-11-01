@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-19T13:30:09.531113+07:00",
+  "address": "http://127.0.0.1:8513",
+  "health_status": 200,
+  "health_body": "ok",
+  "root_status": 200,
+  "browser_exit_code": 0,
+  "status": "PASS",
+  "server_stopped": true
+}

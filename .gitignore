@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+data/raw/*.csv
+data/processed/*.csv
+/train.csv
+/test.csv
+/sample_submission.csv
+artifacts/*
+!artifacts/.gitkeep

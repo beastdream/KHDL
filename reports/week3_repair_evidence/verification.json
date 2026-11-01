@@ -1,0 +1,50 @@
+{
+  "artifact_sha256": "133f798a66927bf9b6be827bf733c6007a3b0779b82b2f43f6c881f648205c71",
+  "unchanged_files": {
+    "src/week1.py": true,
+    "reports/week2_preservation_before.json": true,
+    "reports/week2_preservation_approvals.json": true,
+    "artifacts/model_metadata.json": true,
+    "artifacts/house_price_model.joblib": true,
+    "artifacts/xgboost_baseline.joblib": true,
+    "reports/data_split.json": true,
+    "notebooks/house_price_eda.ipynb": true,
+    "src/data/audit_dataset.py": true,
+    "src/data/split_dataset.py": true,
+    "src/data/week2_inputs.py": true,
+    "src/data/week3_inputs.py": true,
+    "src/utils/preservation.py": true,
+    "tests/test_model.py": true
+  },
+  "historical_gpu_fits_verified": 103,
+  "artifact_fit_evidence_matches_selected_candidate": true,
+  "training_device": "cuda:0",
+  "live_inference_device": "cpu",
+  "validation_predictions_compared": 219,
+  "max_absolute_difference_from_saved_csv": 0.025000000023283064,
+  "saved_csv_roundtrip_to_float32_exact": true,
+  "validation_metrics_cpu_recomputed": {
+    "MAE": 17431.26953125,
+    "RMSE": 24782.89087253543,
+    "R2": 0.902214765548706
+  },
+  "validation_metrics_recorded": {
+    "MAE": 17431.275390625,
+    "RMSE": 24782.905075878414,
+    "R2": 0.9022146463394165
+  },
+  "metric_relative_tolerance_existing_tests": 1e-06,
+  "metric_differences": {
+    "MAE": -0.005859375,
+    "RMSE": -0.014203342983819311,
+    "R2": 1.1920928955078125e-07
+  },
+  "split_counts": {
+    "train": 1022,
+    "valid": 219,
+    "test": 219
+  },
+  "test_bytes_read": false,
+  "test_integrity_scope": "Stored metadata only; holdout was not opened or rehashed",
+  "final_model_retrained": false
+}

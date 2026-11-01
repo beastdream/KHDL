@@ -1,0 +1,21 @@
+{
+  "status": "NOT READY",
+  "week2_tests": {
+    "PASS": 27,
+    "FAIL": 0,
+    "SKIP": 14
+  },
+  "week3_tests": {
+    "PASS": 27,
+    "FAIL": 0,
+    "SKIP": 0
+  },
+  "selected_model": "XGBoost tuned CV#3",
+  "validation_metrics": {
+    "MAE": 17431.275390625,
+    "RMSE": 24782.905075878414,
+    "R2": 0.9022146463394165
+  },
+  "training_device": "cuda:0",
+  "test_accessed": false
+}

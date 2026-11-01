@@ -1,0 +1,20 @@
+ssssssssssss.......ss....................                                [100%]
+============================== warnings summary ===============================
+tests/test_model.py::test_eda_train_only_and_notebook_executed
+tests/test_model.py::test_eda_train_only_and_notebook_executed
+  D:\KHDL\.venv\Lib\site-packages\seaborn\categorical.py:700: MatplotlibDeprecationWarning: vert: bool was deprecated in Matplotlib 3.11 and will be removed in 3.13. Use orientation: {'vertical', 'horizontal'} instead.
+    artists = ax.bxp(**boxplot_kws)
+
+tests/test_model.py::test_eda_train_only_and_notebook_executed
+tests/test_model.py::test_eda_train_only_and_notebook_executed
+  D:\KHDL\.venv\Lib\site-packages\seaborn\matrix.py:243: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+    self.cmap.set_bad(bad)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+27 passed, 14 skipped, 4 warnings in 13.19s
+...........................                                              [100%]
+27 passed in 10.96s
+...................                                                      [100%]
+19 passed in 10.12s
+{'PASS': 73, 'FAIL': 0, 'SKIPPED': 14}
+

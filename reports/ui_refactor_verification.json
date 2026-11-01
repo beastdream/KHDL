@@ -1,0 +1,27 @@
+{
+  "protected_file_count": 83,
+  "changed_protected_files": [
+    "reports/week2_pytest.xml",
+    "reports/week3_pytest.xml",
+    "reports/week3_status.json",
+    "reports/WEEK_2_REPORT.md",
+    "reports/WEEK_3_REPORT.md"
+  ],
+  "prediction_equivalence": "219/219 exactly equal",
+  "preservation": "PASS",
+  "artifact_sha256": "133f798a66927bf9b6be827bf733c6007a3b0779b82b2f43f6c881f648205c71",
+  "no_training_executed": true,
+  "test_not_opened": true,
+  "week1_week2_reports_unchanged": false,
+  "http_health": 200,
+  "http_page": 200,
+  "visual_browser_check": "PASS: Chrome CDP; 12 page/viewport checks, screenshots inspected",
+  "unchanged_protected_files": 78,
+  "report_change_note": "Five reports regenerated outside UI task commands at 2026-10-19 07:21-07:22 +07:00; preserved without overwrite. Model/data/source hashes unchanged.",
+  "ui_status": "PASS",
+  "ui_tests": {
+    "PASS": 24,
+    "FAIL": 0,
+    "SKIP": 0
+  }
+}

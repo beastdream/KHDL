@@ -1,0 +1,726 @@
+[
+  {
+    "bodyWidth": 1440,
+    "viewport": 1440,
+    "mainWidth": 1130,
+    "mainScroll": 1130,
+    "sidebar": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(21, 34, 56)",
+      "font": "16px",
+      "weight": "400"
+    },
+    "labels": [
+      {
+        "text": "Điều hướng",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "400"
+      }
+    ],
+    "button": null,
+    "price": null,
+    "buttonText": null,
+    "selectedTag": null,
+    "chartCount": 2,
+    "exceptions": 0,
+    "page": "overview",
+    "width": 1440
+  },
+  {
+    "bodyWidth": 1440,
+    "viewport": 1440,
+    "mainWidth": 1130,
+    "mainScroll": 1130,
+    "sidebar": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(21, 34, 56)",
+      "font": "16px",
+      "weight": "400"
+    },
+    "labels": [
+      {
+        "text": "Điều hướng",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "400"
+      },
+      {
+        "text": "Khu vực",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Khoảng giá (USD)",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Chất lượng",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Khoảng diện tích (ft²)",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      }
+    ],
+    "button": null,
+    "price": null,
+    "buttonText": null,
+    "selectedTag": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(21, 34, 56)",
+      "font": "14px",
+      "weight": "400"
+    },
+    "chartCount": 7,
+    "exceptions": 0,
+    "page": "Khám phá dữ liệu",
+    "width": 1440
+  },
+  {
+    "button_states": {
+      "hover": "rgb(230, 62, 69)",
+      "focus": "solid",
+      "disabled": "rgb(220, 227, 237)"
+    }
+  },
+  {
+    "dropdown": [
+      {
+        "text": "Blmngtn",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "text": "Blueste",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "text": "BrDale",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ]
+  },
+  {
+    "bodyWidth": 1440,
+    "viewport": 1440,
+    "mainWidth": 1130,
+    "mainScroll": 1130,
+    "sidebar": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(21, 34, 56)",
+      "font": "16px",
+      "weight": "400"
+    },
+    "labels": [
+      {
+        "text": "Điều hướng",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "400"
+      },
+      {
+        "text": "Diện tích sinh hoạt (ft²)",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Phòng ngủ trên mặt đất",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Sức chứa garage (xe)",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Chất lượng tổng thể",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Khu vực",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Phòng tắm đầy đủ",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Năm xây dựng",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Diện tích tầng hầm (ft²)",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      }
+    ],
+    "button": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(255, 82, 82)",
+      "font": "20px",
+      "weight": "700"
+    },
+    "price": {
+      "color": "rgb(21, 34, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "52px",
+      "weight": "700"
+    },
+    "buttonText": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "20px",
+      "weight": "700"
+    },
+    "selectedTag": null,
+    "chartCount": 0,
+    "exceptions": 0,
+    "page": "Dự đoán giá nhà",
+    "width": 1440
+  },
+  {
+    "bodyWidth": 1440,
+    "viewport": 1440,
+    "mainWidth": 1130,
+    "mainScroll": 1130,
+    "sidebar": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(21, 34, 56)",
+      "font": "16px",
+      "weight": "400"
+    },
+    "labels": [
+      {
+        "text": "Điều hướng",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "400"
+      }
+    ],
+    "button": null,
+    "price": null,
+    "buttonText": null,
+    "selectedTag": null,
+    "chartCount": 4,
+    "exceptions": 0,
+    "page": "Hiệu năng mô hình",
+    "width": 1440
+  },
+  {
+    "bodyWidth": 1440,
+    "viewport": 1440,
+    "mainWidth": 1140,
+    "mainScroll": 1140,
+    "sidebar": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(21, 34, 56)",
+      "font": "16px",
+      "weight": "400"
+    },
+    "labels": [
+      {
+        "text": "Điều hướng",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "400"
+      }
+    ],
+    "button": null,
+    "price": null,
+    "buttonText": null,
+    "selectedTag": null,
+    "chartCount": 0,
+    "exceptions": 0,
+    "page": "Về dự án",
+    "width": 1440
+  },
+  {
+    "bodyWidth": 1024,
+    "viewport": 1024,
+    "mainWidth": 1014,
+    "mainScroll": 1014,
+    "sidebar": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(21, 34, 56)",
+      "font": "16px",
+      "weight": "400"
+    },
+    "labels": [
+      {
+        "text": "Điều hướng",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "400"
+      },
+      {
+        "text": "Diện tích sinh hoạt (ft²)",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Phòng ngủ trên mặt đất",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Sức chứa garage (xe)",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Chất lượng tổng thể",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Khu vực",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Phòng tắm đầy đủ",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Năm xây dựng",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Diện tích tầng hầm (ft²)",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      }
+    ],
+    "button": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(255, 82, 82)",
+      "font": "20px",
+      "weight": "700"
+    },
+    "price": {
+      "color": "rgb(21, 34, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "51.2px",
+      "weight": "700"
+    },
+    "buttonText": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "20px",
+      "weight": "700"
+    },
+    "selectedTag": null,
+    "chartCount": 0,
+    "exceptions": 0,
+    "page": "prediction",
+    "width": 1024
+  },
+  {
+    "bodyWidth": 768,
+    "viewport": 768,
+    "mainWidth": 758,
+    "mainScroll": 758,
+    "sidebar": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(21, 34, 56)",
+      "font": "16px",
+      "weight": "400"
+    },
+    "labels": [
+      {
+        "text": "Điều hướng",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "400"
+      },
+      {
+        "text": "Diện tích sinh hoạt (ft²)",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Phòng ngủ trên mặt đất",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Sức chứa garage (xe)",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Chất lượng tổng thể",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Khu vực",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Phòng tắm đầy đủ",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Năm xây dựng",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Diện tích tầng hầm (ft²)",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      }
+    ],
+    "button": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(255, 82, 82)",
+      "font": "20px",
+      "weight": "700"
+    },
+    "price": {
+      "color": "rgb(21, 34, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "38.4px",
+      "weight": "700"
+    },
+    "buttonText": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "20px",
+      "weight": "700"
+    },
+    "selectedTag": null,
+    "chartCount": 0,
+    "exceptions": 0,
+    "page": "prediction",
+    "width": 768
+  },
+  {
+    "bodyWidth": 360,
+    "viewport": 360,
+    "mainWidth": 350,
+    "mainScroll": 350,
+    "sidebar": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(21, 34, 56)",
+      "font": "16px",
+      "weight": "400"
+    },
+    "labels": [
+      {
+        "text": "Điều hướng",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "400"
+      },
+      {
+        "text": "Diện tích sinh hoạt (ft²)",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Phòng ngủ trên mặt đất",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Sức chứa garage (xe)",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Chất lượng tổng thể",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Khu vực",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Phòng tắm đầy đủ",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Năm xây dựng",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Diện tích tầng hầm (ft²)",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      }
+    ],
+    "button": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(255, 82, 82)",
+      "font": "20px",
+      "weight": "700"
+    },
+    "price": {
+      "color": "rgb(21, 34, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "28.8px",
+      "weight": "700"
+    },
+    "buttonText": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "20px",
+      "weight": "700"
+    },
+    "selectedTag": null,
+    "chartCount": 0,
+    "exceptions": 0,
+    "page": "prediction",
+    "width": 360
+  },
+  {
+    "bodyWidth": 360,
+    "viewport": 360,
+    "mainWidth": 350,
+    "mainScroll": 350,
+    "sidebar": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(21, 34, 56)",
+      "font": "16px",
+      "weight": "400"
+    },
+    "labels": [
+      {
+        "text": "Điều hướng",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "400"
+      }
+    ],
+    "button": null,
+    "price": null,
+    "buttonText": null,
+    "selectedTag": null,
+    "chartCount": 2,
+    "exceptions": 0,
+    "page": "overview",
+    "width": 360
+  },
+  {
+    "bodyWidth": 360,
+    "viewport": 360,
+    "mainWidth": 350,
+    "mainScroll": 350,
+    "sidebar": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(21, 34, 56)",
+      "font": "16px",
+      "weight": "400"
+    },
+    "labels": [
+      {
+        "text": "Điều hướng",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "400"
+      },
+      {
+        "text": "Khu vực",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Khoảng giá (USD)",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Chất lượng",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      },
+      {
+        "text": "Khoảng diện tích (ft²)",
+        "color": "rgb(23, 32, 51)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "600"
+      }
+    ],
+    "button": null,
+    "price": null,
+    "buttonText": null,
+    "selectedTag": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(21, 34, 56)",
+      "font": "14px",
+      "weight": "400"
+    },
+    "chartCount": 7,
+    "exceptions": 0,
+    "page": "exploration",
+    "width": 360
+  },
+  {
+    "bodyWidth": 360,
+    "viewport": 360,
+    "mainWidth": 350,
+    "mainScroll": 350,
+    "sidebar": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(21, 34, 56)",
+      "font": "16px",
+      "weight": "400"
+    },
+    "labels": [
+      {
+        "text": "Điều hướng",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "400"
+      }
+    ],
+    "button": null,
+    "price": null,
+    "buttonText": null,
+    "selectedTag": null,
+    "chartCount": 4,
+    "exceptions": 0,
+    "page": "performance",
+    "width": 360
+  },
+  {
+    "bodyWidth": 360,
+    "viewport": 360,
+    "mainWidth": 350,
+    "mainScroll": 350,
+    "sidebar": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(21, 34, 56)",
+      "font": "16px",
+      "weight": "400"
+    },
+    "labels": [
+      {
+        "text": "Điều hướng",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "font": "14px",
+        "weight": "400"
+      }
+    ],
+    "button": null,
+    "price": null,
+    "buttonText": null,
+    "selectedTag": null,
+    "chartCount": 0,
+    "exceptions": 0,
+    "page": "about",
+    "width": 360
+  }
+]

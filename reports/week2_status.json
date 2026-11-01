@@ -1,0 +1,14 @@
+{
+  "core_status": "PASS",
+  "overall_status": "PASS",
+  "gpu_status": "GPU READY",
+  "tests": {
+    "PASS": 27,
+    "FAIL": 0,
+    "SKIP": 14
+  },
+  "week1_regression": "SAFE SUBSET PASS; 14 skips explicitly accepted by user",
+  "week3_gate": "READY",
+  "test_accessed": false,
+  "test_scope": "User-approved safe subset; historical full Week 1 results retained"
+}

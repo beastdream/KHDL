@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "tests": {
+    "PASS": 27,
+    "FAIL": 0,
+    "SKIP": 14
+  },
+  "required_charts_verified": 7,
+  "stored_outputs_preserved": 16,
+  "code_cells_executed": 10,
+  "protected_files_unchanged": [
+    "notebooks/house_price_eda.ipynb",
+    "reports/week2_preservation_before.json",
+    "requirements.txt",
+    "artifacts/xgboost_baseline.joblib",
+    "artifacts/xgboost_baseline.metadata.json",
+    "reports/data_split.json",
+    "src/data/week2_inputs.py"
+  ],
+  "preservation_counts": {
+    "unchanged": 25,
+    "approved_change": 1,
+    "unexpected": 0
+  },
+  "restricted_raw_and_test": "NOT VERIFIED; not opened",
+  "gpu_status": "GPU READY",
+  "model_retrained": false,
+  "split_modified": false,
+  "week3_started": false
+}

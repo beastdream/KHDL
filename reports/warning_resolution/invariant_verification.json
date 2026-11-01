@@ -1,0 +1,94 @@
+{
+  "all_protected_hashes_unchanged": true,
+  "protected_files": {
+    "artifacts/house_price_model.joblib": true,
+    "artifacts/model_metadata.json": true,
+    "artifacts/xgboost_baseline.joblib": true,
+    "src/models/preprocessing.py": true,
+    "reports/data_split.json": true,
+    "reports/final_model_freeze.json": true,
+    "reports/test_metrics.json": true,
+    "reports/test_predictions.json": true,
+    "reports/test_evaluation.md": true,
+    "reports/final_evaluation_attempt.json": true,
+    "reports/final_evaluation_verifications.json": true,
+    "reports/validation_predictions.csv": true,
+    "requirements.txt": true,
+    "requirements-lock.txt": true,
+    "requirements-final-lock.txt": true,
+    "data/processed/train.csv": true,
+    "data/processed/valid.csv": true,
+    ".venv/Lib/site-packages/seaborn/categorical.py": true,
+    ".venv/Lib/site-packages/seaborn/matrix.py": true,
+    ".venv/Lib/site-packages/matplotlib/axes/_axes.py": true
+  },
+  "eda_summary_identical": true,
+  "reviewed_notebook_diff": true,
+  "reviewed_eda_diff": true,
+  "png_comparison": {
+    "week2_01_price_histogram.png": {
+      "shape": [
+        775,
+        1415,
+        4
+      ],
+      "max_channel_change": 0,
+      "identical": true
+    },
+    "week2_02_area_price.png": {
+      "shape": [
+        775,
+        1416,
+        4
+      ],
+      "max_channel_change": 0,
+      "identical": true
+    },
+    "week2_03_quality_price.png": {
+      "shape": [
+        775,
+        1416,
+        4
+      ],
+      "max_channel_change": 0,
+      "identical": true
+    },
+    "week2_04_neighborhood_median.png": {
+      "shape": [
+        1255,
+        1733,
+        4
+      ],
+      "max_channel_change": 0,
+      "identical": true
+    },
+    "week2_05_correlation.png": {
+      "shape": [
+        1254,
+        1501,
+        4
+      ],
+      "max_channel_change": 0,
+      "identical": true
+    },
+    "week2_06_year_price.png": {
+      "shape": [
+        775,
+        1416,
+        4
+      ],
+      "max_channel_change": 0,
+      "identical": true
+    },
+    "week2_07_bedrooms_price.png": {
+      "shape": [
+        775,
+        1416,
+        4
+      ],
+      "max_channel_change": 0,
+      "identical": true
+    }
+  },
+  "test_reopened": false
+}

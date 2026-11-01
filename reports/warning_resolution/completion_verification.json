@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "before_counts": {
+    "PASS": 73,
+    "FAIL": 0,
+    "SKIPPED": 14
+  },
+  "after_counts": {
+    "PASS": 73,
+    "FAIL": 0,
+    "SKIPPED": 14
+  },
+  "before_warning_count": 4,
+  "after_warning_count": 0,
+  "strict_warning_error_test": "PASS",
+  "protected_hashes_unchanged_after_all_tests": {
+    "artifacts/house_price_model.joblib": true,
+    "artifacts/model_metadata.json": true,
+    "artifacts/xgboost_baseline.joblib": true,
+    "src/models/preprocessing.py": true,
+    "reports/data_split.json": true,
+    "reports/final_model_freeze.json": true,
+    "reports/test_metrics.json": true,
+    "reports/test_predictions.json": true,
+    "reports/test_evaluation.md": true,
+    "reports/final_evaluation_attempt.json": true,
+    "reports/final_evaluation_verifications.json": true,
+    "reports/validation_predictions.csv": true,
+    "requirements.txt": true,
+    "requirements-lock.txt": true,
+    "requirements-final-lock.txt": true,
+    "data/processed/train.csv": true,
+    "data/processed/valid.csv": true,
+    ".venv/Lib/site-packages/seaborn/categorical.py": true,
+    ".venv/Lib/site-packages/seaborn/matrix.py": true,
+    ".venv/Lib/site-packages/matplotlib/axes/_axes.py": true
+  },
+  "notebook_preservation": "EXACT REVIEWED DIFF",
+  "eda_preservation": "EXACT REVIEWED DIFF",
+  "streamlit": {
+    "at": "2026-10-19T13:30:09.531113+07:00",
+    "address": "http://127.0.0.1:8513",
+    "health_status": 200,
+    "health_body": "ok",
+    "root_status": 200,
+    "browser_exit_code": 0,
+    "status": "PASS",
+    "server_stopped": true
+  },
+  "dependency_upgrade": false,
+  "test_evaluated_again": false
+}

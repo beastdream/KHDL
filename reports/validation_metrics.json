@@ -1,0 +1,21 @@
+{
+  "evaluation_split": "valid",
+  "rows": 219,
+  "target": "SalePrice",
+  "unit": "USD",
+  "models": {
+    "Dummy Baseline": {
+      "MAE": 58741.91780821918,
+      "RMSE": 81912.0616051252,
+      "R2": -0.06823062665749902,
+      "Device": "CPU"
+    },
+    "XGBoost": {
+      "MAE": 17792.2578125,
+      "RMSE": 25752.38396731456,
+      "R2": 0.8944145441055298,
+      "Device": "cuda:0"
+    }
+  },
+  "rmse_improvement_pct": 68.56093783665281
+}

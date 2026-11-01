@@ -1,0 +1,136 @@
+{
+  "created_at": "2026-10-19T13:14:02.384697+07:00",
+  "repeats": 3,
+  "rows": 1022,
+  "seed": 42,
+  "python": "3.11.9",
+  "xgboost": "3.2.0",
+  "hyperparameters": {
+    "objective": "reg:squarederror",
+    "base_score": null,
+    "booster": null,
+    "callbacks": null,
+    "colsample_bylevel": null,
+    "colsample_bynode": null,
+    "colsample_bytree": 0.8,
+    "device": "cpu",
+    "early_stopping_rounds": null,
+    "enable_categorical": false,
+    "eval_metric": null,
+    "feature_types": null,
+    "feature_weights": null,
+    "gamma": null,
+    "grow_policy": null,
+    "importance_type": null,
+    "interaction_constraints": null,
+    "learning_rate": 0.03,
+    "max_bin": null,
+    "max_cat_threshold": null,
+    "max_cat_to_onehot": null,
+    "max_delta_step": null,
+    "max_depth": 7,
+    "max_leaves": null,
+    "min_child_weight": null,
+    "missing": "NaN (XGBoost default)",
+    "monotone_constraints": null,
+    "multi_strategy": null,
+    "n_estimators": 300,
+    "n_jobs": 1,
+    "num_parallel_tree": null,
+    "random_state": 42,
+    "reg_alpha": null,
+    "reg_lambda": 5,
+    "sampling_method": null,
+    "scale_pos_weight": null,
+    "subsample": 0.8,
+    "tree_method": "hist",
+    "validate_parameters": null,
+    "verbosity": null
+  },
+  "frozen_artifact_sha256": "133f798a66927bf9b6be827bf733c6007a3b0779b82b2f43f6c881f648205c71",
+  "frozen_artifact_bytes": 1160913,
+  "inventory": {
+    "returncode": 0,
+    "stdout": "name, driver_version, memory.total [MiB]\nNVIDIA GeForce GTX 1650, 566.07, 4096 MiB\n",
+    "stderr": ""
+  },
+  "nvidia_smi": {
+    "returncode": 0,
+    "stdout": "Mon Oct 19 13:14:02 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 566.07                 Driver Version: 566.07         CUDA Version: 12.7     |\n|-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce GTX 1650      WDDM  |   00000000:01:00.0 Off |                  N/A |\n| N/A   51C    P0             14W /   50W |     253MiB /   4096MiB |      4%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n                                                                                         \n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A      6948      C   D:\\python 3.11\\python.exe                   N/A      |\n|    0   N/A  N/A     14756    C+G   ...Brave-Browser\\Application\\brave.exe      N/A      |\n|    0   N/A  N/A     29840      C   D:\\python 3.11\\python.exe                   N/A      |\n+-----------------------------------------------------------------------------------------+\n",
+    "stderr": ""
+  },
+  "devices": {
+    "cpu": {
+      "status": "SUCCESS",
+      "fits": [
+        {
+          "seconds": 0.2316833999939263,
+          "actual_device": "cpu",
+          "updater": "grow_quantile_histmaker"
+        },
+        {
+          "seconds": 0.22301320001133718,
+          "actual_device": "cpu",
+          "updater": "grow_quantile_histmaker"
+        },
+        {
+          "seconds": 0.23145260001183487,
+          "actual_device": "cpu",
+          "updater": "grow_quantile_histmaker"
+        }
+      ],
+      "training_median_seconds": 0.23145260001183487,
+      "training_stdev_seconds": 0.004940464025747348,
+      "latency_1": {
+        "median_ms": 9.028050015331246,
+        "repeats": 100
+      },
+      "latency_100": {
+        "median_ms": 10.17485000193119,
+        "repeats": 100
+      },
+      "serialized_bytes": 1140366,
+      "warnings": []
+    },
+    "cuda": {
+      "status": "SUCCESS",
+      "fits": [
+        {
+          "seconds": 1.0853990000032354,
+          "actual_device": "cuda:0",
+          "updater": "grow_gpu_hist"
+        },
+        {
+          "seconds": 1.2309738999756519,
+          "actual_device": "cuda:0",
+          "updater": "grow_gpu_hist"
+        },
+        {
+          "seconds": 1.1770218000165187,
+          "actual_device": "cuda:0",
+          "updater": "grow_gpu_hist"
+        }
+      ],
+      "training_median_seconds": 1.1770218000165187,
+      "training_stdev_seconds": 0.07359531017016127,
+      "latency_1": {
+        "median_ms": 12.659750005695969,
+        "repeats": 100
+      },
+      "latency_100": {
+        "median_ms": 11.59275000100024,
+        "repeats": 100
+      },
+      "serialized_bytes": 1161001,
+      "warnings": []
+    }
+  },
+  "timing_scope": "full Pipeline.fit including preprocessing; one untimed warmup per device; sequential 3 fits; n_jobs=1",
+  "prediction_scope": "preprocessor.transform + DMatrix + Booster.predict; warm; host data for both devices",
+  "peak_vram_mib": null,
+  "peak_vram_note": "Not measured: WDDM/per-process telemetry unavailable; snapshot is not peak VRAM",
+  "test_accessed": false,
+  "benchmark_models_replace_final": false,
+  "gpu_status": "GPU READY",
+  "speedup_cpu_over_gpu": 0.19664257706066837
+}

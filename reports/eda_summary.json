@@ -1,0 +1,376 @@
+{
+  "split": "train",
+  "rows": 1022,
+  "target_median": 165000.0,
+  "target_skew": 1.7620722977926118,
+  "pearson_target": {
+    "OverallQual": 0.7847199696514466,
+    "GrLivArea": 0.6892376059288233,
+    "GarageCars": 0.6426887093726487,
+    "TotalBsmtSF": 0.5900174007850268,
+    "FullBath": 0.5491636134225699,
+    "YearBuilt": 0.5122060671111749,
+    "BedroomAbvGr": 0.1598791461716318
+  },
+  "neighborhoods": [
+    {
+      "Neighborhood": "MeadowV",
+      "median": 89500.0,
+      "count": 10
+    },
+    {
+      "Neighborhood": "BrDale",
+      "median": 103000.0,
+      "count": 12
+    },
+    {
+      "Neighborhood": "IDOTRR",
+      "median": 107250.0,
+      "count": 24
+    },
+    {
+      "Neighborhood": "BrkSide",
+      "median": 119000.0,
+      "count": 41
+    },
+    {
+      "Neighborhood": "OldTown",
+      "median": 123250.0,
+      "count": 82
+    },
+    {
+      "Neighborhood": "Blueste",
+      "median": 124000.0,
+      "count": 1
+    },
+    {
+      "Neighborhood": "Edwards",
+      "median": 125000.0,
+      "count": 79
+    },
+    {
+      "Neighborhood": "Sawyer",
+      "median": 134000.0,
+      "count": 48
+    },
+    {
+      "Neighborhood": "SWISU",
+      "median": 139750.0,
+      "count": 16
+    },
+    {
+      "Neighborhood": "NAmes",
+      "median": 142000.0,
+      "count": 155
+    },
+    {
+      "Neighborhood": "NPkVill",
+      "median": 147750.0,
+      "count": 6
+    },
+    {
+      "Neighborhood": "Mitchel",
+      "median": 158950.0,
+      "count": 34
+    },
+    {
+      "Neighborhood": "SawyerW",
+      "median": 179100.0,
+      "count": 38
+    },
+    {
+      "Neighborhood": "Blmngtn",
+      "median": 179870.0,
+      "count": 14
+    },
+    {
+      "Neighborhood": "NWAmes",
+      "median": 183950.0,
+      "count": 54
+    },
+    {
+      "Neighborhood": "Gilbert",
+      "median": 184050.0,
+      "count": 52
+    },
+    {
+      "Neighborhood": "Crawfor",
+      "median": 195550.0,
+      "count": 38
+    },
+    {
+      "Neighborhood": "CollgCr",
+      "median": 200500.0,
+      "count": 109
+    },
+    {
+      "Neighborhood": "ClearCr",
+      "median": 211000.0,
+      "count": 19
+    },
+    {
+      "Neighborhood": "Somerst",
+      "median": 227680.0,
+      "count": 57
+    },
+    {
+      "Neighborhood": "Timber",
+      "median": 228000.0,
+      "count": 27
+    },
+    {
+      "Neighborhood": "Veenker",
+      "median": 231750.0,
+      "count": 8
+    },
+    {
+      "Neighborhood": "StoneBr",
+      "median": 282000.0,
+      "count": 20
+    },
+    {
+      "Neighborhood": "NoRidge",
+      "median": 290000.0,
+      "count": 28
+    },
+    {
+      "Neighborhood": "NridgHt",
+      "median": 312000.0,
+      "count": 50
+    }
+  ],
+  "iqr_outliers": [
+    {
+      "Id": 1183,
+      "GrLivArea": 4476,
+      "SalePrice": 745000
+    },
+    {
+      "Id": 1143,
+      "GrLivArea": 2828,
+      "SalePrice": 424870
+    },
+    {
+      "Id": 179,
+      "GrLivArea": 2234,
+      "SalePrice": 501837
+    },
+    {
+      "Id": 679,
+      "GrLivArea": 2046,
+      "SalePrice": 372500
+    },
+    {
+      "Id": 225,
+      "GrLivArea": 2392,
+      "SalePrice": 386250
+    },
+    {
+      "Id": 322,
+      "GrLivArea": 2468,
+      "SalePrice": 354000
+    },
+    {
+      "Id": 1354,
+      "GrLivArea": 3238,
+      "SalePrice": 410000
+    },
+    {
+      "Id": 337,
+      "GrLivArea": 1922,
+      "SalePrice": 377426
+    },
+    {
+      "Id": 350,
+      "GrLivArea": 2728,
+      "SalePrice": 437154
+    },
+    {
+      "Id": 1389,
+      "GrLivArea": 1746,
+      "SalePrice": 377500
+    },
+    {
+      "Id": 988,
+      "GrLivArea": 1940,
+      "SalePrice": 395192
+    },
+    {
+      "Id": 645,
+      "GrLivArea": 1766,
+      "SalePrice": 370878
+    },
+    {
+      "Id": 390,
+      "GrLivArea": 2332,
+      "SalePrice": 426000
+    },
+    {
+      "Id": 441,
+      "GrLivArea": 2402,
+      "SalePrice": 555000
+    },
+    {
+      "Id": 1170,
+      "GrLivArea": 3627,
+      "SalePrice": 625000
+    },
+    {
+      "Id": 804,
+      "GrLivArea": 2822,
+      "SalePrice": 582933
+    },
+    {
+      "Id": 1182,
+      "GrLivArea": 1652,
+      "SalePrice": 392500
+    },
+    {
+      "Id": 186,
+      "GrLivArea": 3608,
+      "SalePrice": 475000
+    },
+    {
+      "Id": 279,
+      "GrLivArea": 2121,
+      "SalePrice": 415298
+    },
+    {
+      "Id": 689,
+      "GrLivArea": 1419,
+      "SalePrice": 392000
+    },
+    {
+      "Id": 826,
+      "GrLivArea": 2084,
+      "SalePrice": 385000
+    },
+    {
+      "Id": 12,
+      "GrLivArea": 2324,
+      "SalePrice": 345000
+    },
+    {
+      "Id": 516,
+      "GrLivArea": 2020,
+      "SalePrice": 402861
+    },
+    {
+      "Id": 474,
+      "GrLivArea": 1976,
+      "SalePrice": 440000
+    },
+    {
+      "Id": 1269,
+      "GrLivArea": 3447,
+      "SalePrice": 381000
+    },
+    {
+      "Id": 314,
+      "GrLivArea": 2036,
+      "SalePrice": 375000
+    },
+    {
+      "Id": 321,
+      "GrLivArea": 2596,
+      "SalePrice": 342643
+    },
+    {
+      "Id": 497,
+      "GrLivArea": 3228,
+      "SalePrice": 430000
+    },
+    {
+      "Id": 1374,
+      "GrLivArea": 2633,
+      "SalePrice": 466500
+    },
+    {
+      "Id": 878,
+      "GrLivArea": 2224,
+      "SalePrice": 350000
+    },
+    {
+      "Id": 54,
+      "GrLivArea": 1842,
+      "SalePrice": 385000
+    },
+    {
+      "Id": 152,
+      "GrLivArea": 1710,
+      "SalePrice": 372402
+    },
+    {
+      "Id": 609,
+      "GrLivArea": 3194,
+      "SalePrice": 359100
+    },
+    {
+      "Id": 113,
+      "GrLivArea": 2696,
+      "SalePrice": 383970
+    },
+    {
+      "Id": 643,
+      "GrLivArea": 2704,
+      "SalePrice": 345000
+    },
+    {
+      "Id": 379,
+      "GrLivArea": 1856,
+      "SalePrice": 394432
+    },
+    {
+      "Id": 162,
+      "GrLivArea": 2668,
+      "SalePrice": 412500
+    },
+    {
+      "Id": 703,
+      "GrLivArea": 2576,
+      "SalePrice": 361919
+    },
+    {
+      "Id": 1268,
+      "GrLivArea": 2018,
+      "SalePrice": 378500
+    },
+    {
+      "Id": 1438,
+      "GrLivArea": 1932,
+      "SalePrice": 394617
+    },
+    {
+      "Id": 770,
+      "GrLivArea": 3279,
+      "SalePrice": 538000
+    }
+  ],
+  "large_area_outliers": [
+    {
+      "Id": 1183,
+      "GrLivArea": 4476,
+      "SalePrice": 745000
+    },
+    {
+      "Id": 524,
+      "GrLivArea": 4676,
+      "SalePrice": 184750
+    },
+    {
+      "Id": 1299,
+      "GrLivArea": 5642,
+      "SalePrice": 160000
+    }
+  ],
+  "figures": [
+    "figures\\week2_01_price_histogram.png",
+    "figures\\week2_02_area_price.png",
+    "figures\\week2_03_quality_price.png",
+    "figures\\week2_04_neighborhood_median.png",
+    "figures\\week2_05_correlation.png",
+    "figures\\week2_06_year_price.png",
+    "figures\\week2_07_bedrooms_price.png"
+  ],
+  "rows_removed": 0
+}

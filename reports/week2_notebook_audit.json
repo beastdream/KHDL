@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "notebook_sha256": "9a56deb020ab60b68e94d30b08f176c957e474ed8f600f3d95b54eed0f080373",
+  "stored_display_data": 16,
+  "stored_mime_counts": {
+    "image/png": 7,
+    "text/markdown": 1,
+    "text/plain": 5,
+    "text/html": 3,
+    "application/vnd.plotly.v1+json": 4,
+    "application/vnd.jupyter.widget-view+json": 1
+  },
+  "stored_errors": [],
+  "fresh_execution_errors": [],
+  "cells": [
+    {
+      "cell": 1,
+      "status": "PASS",
+      "rich_outputs": 0,
+      "stderr": ""
+    },
+    {
+      "cell": 2,
+      "status": "PASS",
+      "rich_outputs": 7,
+      "stderr": ""
+    },
+    {
+      "cell": 3,
+      "status": "PASS",
+      "rich_outputs": 0,
+      "stderr": ""
+    },
+    {
+      "cell": 5,
+      "status": "PASS",
+      "rich_outputs": 3,
+      "stderr": ""
+    },
+    {
+      "cell": 7,
+      "status": "PASS",
+      "rich_outputs": 1,
+      "stderr": ""
+    },
+    {
+      "cell": 9,
+      "status": "PASS",
+      "rich_outputs": 1,
+      "stderr": ""
+    },
+    {
+      "cell": 11,
+      "status": "PASS",
+      "rich_outputs": 1,
+      "stderr": ""
+    },
+    {
+      "cell": 13,
+      "status": "PASS",
+      "rich_outputs": 1,
+      "stderr": ""
+    },
+    {
+      "cell": 15,
+      "status": "PASS",
+      "rich_outputs": 2,
+      "stderr": ""
+    },
+    {
+      "cell": 17,
+      "status": "PASS",
+      "rich_outputs": 2,
+      "stderr": ""
+    }
+  ],
+  "required_charts": {
+    "week2_01_price_histogram.png": {
+      "type": "histogram",
+      "x": "SalePrice",
+      "y": null,
+      "train_values_verified": true
+    },
+    "week2_02_area_price.png": {
+      "type": "scatter",
+      "x": "GrLivArea",
+      "y": "SalePrice",
+      "train_values_verified": true
+    },
+    "week2_03_quality_price.png": {
+      "type": "box",
+      "x": "OverallQual",
+      "y": "SalePrice",
+      "train_values_verified": true
+    },
+    "week2_04_neighborhood_median.png": {
+      "type": "barh",
+      "x": "Neighborhood",
+      "y": "median(SalePrice)",
+      "train_values_verified": true
+    },
+    "week2_05_correlation.png": {
+      "type": "heatmap",
+      "x": "Pearson",
+      "y": null,
+      "train_values_verified": true
+    },
+    "week2_06_year_price.png": {
+      "type": "scatter",
+      "x": "YearBuilt",
+      "y": "SalePrice",
+      "train_values_verified": true
+    },
+    "week2_07_bedrooms_price.png": {
+      "type": "box",
+      "x": "BedroomAbvGr",
+      "y": "SalePrice",
+      "train_values_verified": true
+    }
+  },
+  "missing_charts": [],
+  "missing_displayed_pngs": [],
+  "source_policy": "All inspected cells read processed/train.csv only; fresh execution protected by unchanged Data Guard.",
+  "historical_access": "Source and stored output inspection cannot prove past kernel access; this fresh execution is guarded.",
+  "notebook_modified": false
+}

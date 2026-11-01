@@ -1,0 +1,9 @@
+{
+  "notebooks/house_price_eda.ipynb": "b8057d44176b039c4b03ecfdce5577d203872d771b48ee4210a0799b57724f26",
+  "reports/week2_preservation_before.json": "fd9828ffc7c6e4218900d529bdcdfa2e20fdec9adf6b9aca9e3d9d779b544c2c",
+  "requirements.txt": "ac22392cc5f19ea3de826ba902d9d4b9ccbc12288bb6e555856a423c4260f220",
+  "artifacts/xgboost_baseline.joblib": "15ef6d2e12c372a9e9e3fc01c0b77649aac11b21c4837fdaab5a64cde47f7281",
+  "artifacts/xgboost_baseline.metadata.json": "ec7f18ac5844e7aa374fdee79852712a2ea14f54e742c0b6b86ff8d903d91a9a",
+  "reports/data_split.json": "301250176355b532a180f4c2040d1bb27a3efdf935c377197f0620bd68adb1bc",
+  "src/data/week2_inputs.py": "dbcd9b2e2f79ec4a488bed9f3da8332e194041c2cb894f171bf56fa634518026"
+}

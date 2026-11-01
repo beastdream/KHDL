@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "evidence": {
+    "A_EDA": "7 train-only figures, executed notebook, Vietnamese analysis; test_eda_train_only_and_notebook_executed PASS",
+    "B_preprocessing": "ColumnTransformer, median/mode/unknown-ignore checked live; train-only fitted statistics and mutation tests PASS",
+    "C_baseline": "Dummy median train fit; validation metrics independently recomputed in tests",
+    "D_GPU": "Live reloaded Booster cuda:0 and grow_gpu_hist confirmed; 300 estimators; timing and inventory in metadata",
+    "E_evaluation": "219 validation rows; MAE/RMSE/R2 independently recomputed; no Test metrics",
+    "F_artifact": "joblib and JSON metadata hash verified; schema and fitted transformers/model inspected",
+    "G_tests": "25 PASS, 14 explicitly accepted SKIP; historical 21 PASS unchanged; no prohibited data reads",
+    "H_report": "WEEK_2_REPORT.md includes EDA, both models, metrics, GPU, timing, complete test list and limitations",
+    "preservation": "All snapshot code/reports hashes match; train/valid match original manifest; test never opened or rehashed",
+    "week3": "Not implemented; core gate READY under user-approved test scope"
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "status": "PASS",
+  "reference": "ui_refactor_before.json; original reference not rewritten",
+  "entries": [
+    {
+      "path": "src/week1.py",
+      "previous_sha256": "9ff7049430ee114f9e2c2b0eec4909a49a4b760203c4da8bd56085f16159180c",
+      "current_sha256": "9ff7049430ee114f9e2c2b0eec4909a49a4b760203c4da8bd56085f16159180c",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/week2.py",
+      "previous_sha256": "bf5db82115dec0ef4a2a8047274f9bea8a60f1f6bfedcc7907afdb604e234a9a",
+      "current_sha256": "bf5db82115dec0ef4a2a8047274f9bea8a60f1f6bfedcc7907afdb604e234a9a",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/__init__.py",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/data/app_views.py",
+      "previous_sha256": "349f92271daa85043ef41feb76fcb881e9de8a7c4d63d17d8067f023af0db674",
+      "current_sha256": "1c185aba5a5baac349d3a8b507c7580917219dcb34d81fa4eca969662551b186",
+      "status": "AUTHORIZED FINAL CHANGE",
+      "reason": "User Phase 6: performance page reads exported evaluation results"
+    },
+    {
+      "path": "src/data/audit_dataset.py",
+      "previous_sha256": "ce14b47ace37bfe216a5b455845732ca4ab6d215f7cf84d248ef50d614351962",
+      "current_sha256": "ce14b47ace37bfe216a5b455845732ca4ab6d215f7cf84d248ef50d614351962",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/data/eda.py",
+      "previous_sha256": "41b4cbd9eaea5b37794c2750a1b843ee53ec4ac047b0333572d015d335992377",
+      "current_sha256": "a9dbbebc744e014cd808e4b47cb8226248bbd6180dc93370542b1249728b7049",
+      "status": "VERIFIED PLOTTING COMPATIBILITY CHANGE",
+      "reason": "User warning-resolution request; exact presentation diff verified, original evidence pinned"
+    },
+    {
+      "path": "src/data/schema.py",
+      "previous_sha256": "8d2037290d56d1d15061a69feedb039e0ef228bbddb119ead5c616caf884bf2c",
+      "current_sha256": "8d2037290d56d1d15061a69feedb039e0ef228bbddb119ead5c616caf884bf2c",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/data/split_dataset.py",
+      "previous_sha256": "2e0e3916eb77aec9ecba996ff322163169852f6ed11390f6954b5cdbc188d5ef",
+      "current_sha256": "2e0e3916eb77aec9ecba996ff322163169852f6ed11390f6954b5cdbc188d5ef",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/data/week2_inputs.py",
+      "previous_sha256": "dbcd9b2e2f79ec4a488bed9f3da8332e194041c2cb894f171bf56fa634518026",
+      "current_sha256": "dbcd9b2e2f79ec4a488bed9f3da8332e194041c2cb894f171bf56fa634518026",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/data/week3_inputs.py",
+      "previous_sha256": "159d2105b11c4700be54de1a48d0d046acd6cce29ab2f6b785e7cdaeb2b48ed5",
+      "current_sha256": "159d2105b11c4700be54de1a48d0d046acd6cce29ab2f6b785e7cdaeb2b48ed5",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/data/__init__.py",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/models/evaluate_validation.py",
+      "previous_sha256": "7b2b8a74e2bafa813ec759831cf6e1d2529e5cdc38a86ab005d4bb52fd216cdc",
+      "current_sha256": "7b2b8a74e2bafa813ec759831cf6e1d2529e5cdc38a86ab005d4bb52fd216cdc",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/models/inference.py",
+      "previous_sha256": "7186480d450a3febc724eefc839f2a4fb9ab0578056dc00ac4518042e1fd6fad",
+      "current_sha256": "7186480d450a3febc724eefc839f2a4fb9ab0578056dc00ac4518042e1fd6fad",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/models/preprocessing.py",
+      "previous_sha256": "82c1808f2dad66fa7caa507450156b43c1e230bf2a3330a07b067d823b627b3a",
+      "current_sha256": "82c1808f2dad66fa7caa507450156b43c1e230bf2a3330a07b067d823b627b3a",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/models/train_model.py",
+      "previous_sha256": "f542d4753940f79c1bb722bafa896057e03873f7eab1286e5e0525877215b2aa",
+      "current_sha256": "f542d4753940f79c1bb722bafa896057e03873f7eab1286e5e0525877215b2aa",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/models/tune_model.py",
+      "previous_sha256": "2e802d365995d4454a6eab6ffa0ecb75d738b280868b42d3f458e53b04804976",
+      "current_sha256": "2e802d365995d4454a6eab6ffa0ecb75d738b280868b42d3f458e53b04804976",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/models/week3_pipeline.py",
+      "previous_sha256": "297ff9af6832db8500176727bb7434b701d2796e454b45926e6db90dc2cd0ea6",
+      "current_sha256": "297ff9af6832db8500176727bb7434b701d2796e454b45926e6db90dc2cd0ea6",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/models/__init__.py",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/utils/check_gpu.py",
+      "previous_sha256": "06eb8e7e2c86e3eeb2bcb7fa56dcda0677139648d8e03ee8284f85ead028e4d3",
+      "current_sha256": "06eb8e7e2c86e3eeb2bcb7fa56dcda0677139648d8e03ee8284f85ead028e4d3",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/utils/notebook_audit.py",
+      "previous_sha256": "830ce3e30031e6f4ade0f90c79a395e9bfa4e6819c8000b741aac2bd64d19a54",
+      "current_sha256": "830ce3e30031e6f4ade0f90c79a395e9bfa4e6819c8000b741aac2bd64d19a54",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/utils/paths.py",
+      "previous_sha256": "209dbada39fa543c51829cd2ff2c27bdebc0a17fde75ea0864533a511b8dcbc1",
+      "current_sha256": "209dbada39fa543c51829cd2ff2c27bdebc0a17fde75ea0864533a511b8dcbc1",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/utils/preservation.py",
+      "previous_sha256": "35be426dc9ce9bbc73c4c28345aa7dbc98a6889d722238ddff53435231e592a9",
+      "current_sha256": "35be426dc9ce9bbc73c4c28345aa7dbc98a6889d722238ddff53435231e592a9",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/utils/run_eda_notebook.py",
+      "previous_sha256": "c0741a0fe80c037b51fcf6a4b34bbf76663b3afa5f591503172a3ddd4628146a",
+      "current_sha256": "c0741a0fe80c037b51fcf6a4b34bbf76663b3afa5f591503172a3ddd4628146a",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/utils/validate_week3.py",
+      "previous_sha256": "d8f2c3053d3e62116d70cab77e35197a49183024623d82eb48b77eea01f75929",
+      "current_sha256": "d8f2c3053d3e62116d70cab77e35197a49183024623d82eb48b77eea01f75929",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/utils/week2_report.py",
+      "previous_sha256": "ec797625c91c1b067d44f3911443f2273bab194e26436d2e803f59fe0faebae9",
+      "current_sha256": "ec797625c91c1b067d44f3911443f2273bab194e26436d2e803f59fe0faebae9",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/utils/week3_report.py",
+      "previous_sha256": "06e97c73b60d865d39db45a040095a036692563d6de92f148dc04a282817e44a",
+      "current_sha256": "06e97c73b60d865d39db45a040095a036692563d6de92f148dc04a282817e44a",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "src/utils/__init__.py",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "artifacts/.gitkeep",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "artifacts/house_price_model.joblib",
+      "previous_sha256": "133f798a66927bf9b6be827bf733c6007a3b0779b82b2f43f6c881f648205c71",
+      "current_sha256": "133f798a66927bf9b6be827bf733c6007a3b0779b82b2f43f6c881f648205c71",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "artifacts/model_metadata.json",
+      "previous_sha256": "335b166286b3407eacf2a962c2f13dea9d0e1d672bcbe219c03944d5797347d4",
+      "current_sha256": "335b166286b3407eacf2a962c2f13dea9d0e1d672bcbe219c03944d5797347d4",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "artifacts/xgboost_baseline.joblib",
+      "previous_sha256": "15ef6d2e12c372a9e9e3fc01c0b77649aac11b21c4837fdaab5a64cde47f7281",
+      "current_sha256": "15ef6d2e12c372a9e9e3fc01c0b77649aac11b21c4837fdaab5a64cde47f7281",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "artifacts/xgboost_baseline.metadata.json",
+      "previous_sha256": "ec7f18ac5844e7aa374fdee79852712a2ea14f54e742c0b6b86ff8d903d91a9a",
+      "current_sha256": "ec7f18ac5844e7aa374fdee79852712a2ea14f54e742c0b6b86ff8d903d91a9a",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "notebooks/.gitkeep",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "UNCHANGED",
+      "reason": ""
+    },
+    {
+      "path": "notebooks/house_price_eda.ipynb",
+      "previous_sha256": "b8057d44176b039c4b03ecfdce5577d203872d771b48ee4210a0799b57724f26",
+      "current_sha256": "9a56deb020ab60b68e94d30b08f176c957e474ed8f600f3d95b54eed0f080373",
+      "status": "VERIFIED PLOTTING COMPATIBILITY CHANGE",
+      "reason": "User warning-resolution request; exact presentation diff verified, original evidence pinned"
+    }
+  ],
+  "week1_preservation": "PASS",
+  "holdout_reopened": false
+}

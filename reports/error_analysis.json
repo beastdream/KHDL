@@ -1,0 +1,45 @@
+{
+  "mean_residual": 1226.7058718607307,
+  "median_residual": 578.828125,
+  "residual_skew": 0.816165730230797,
+  "underprediction_fraction": 0.5159817351598174,
+  "zero_actual_count": 0,
+  "max_absolute_error": 121419.375,
+  "groups": [
+    {
+      "PriceRange": "<100k",
+      "count": 20,
+      "MAE": 11935.631640625,
+      "mean_residual": -8907.173046875,
+      "MAPE": 16.710129490256445
+    },
+    {
+      "PriceRange": "100–200k",
+      "count": 148,
+      "MAE": 12810.125,
+      "mean_residual": -2233.2667863175675,
+      "MAPE": 8.895588681098095
+    },
+    {
+      "PriceRange": "200–300k",
+      "count": 35,
+      "MAE": 21067.25044642857,
+      "mean_residual": 5207.101339285714,
+      "MAPE": 8.905279579446063
+    },
+    {
+      "PriceRange": "300–400k",
+      "count": 10,
+      "MAE": 47337.7453125,
+      "mean_residual": 17993.7765625,
+      "MAPE": 14.070293697657316
+    },
+    {
+      "PriceRange": ">=400k",
+      "count": 6,
+      "MAE": 69188.203125,
+      "mean_residual": 69188.203125,
+      "MAPE": 12.550060322585756
+    }
+  ]
+}

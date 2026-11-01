@@ -1,0 +1,31 @@
+{
+  "evaluated_at": "2026-10-19T13:12:44.605907+07:00",
+  "evaluation_split": "test",
+  "rows": 219,
+  "unit": "USD",
+  "artifact_sha256": "133f798a66927bf9b6be827bf733c6007a3b0779b82b2f43f6c881f648205c71",
+  "freeze_sha256": "4ac1942e5991c20b49d3c75f5eb0ac9d2da9d075b3288493c24c34c22df74b77",
+  "test_sha256": "7383f69e2cf6e315087e4a4c6836c3499a26f249cde4f6da1e08e2a19bcc979a",
+  "predictions_sha256": "1d39a3965777f8edda9a366a97124f16f192d8355860423742b85a9703ac8bd9",
+  "models": {
+    "Dummy Regressor": {
+      "MAE": 55352.09132420091,
+      "RMSE": 87732.91284310623,
+      "R2": -0.011398472827835793
+    },
+    "XGBoost": {
+      "MAE": 17171.103515625,
+      "RMSE": 26740.49513378539,
+      "R2": 0.9060415029525757
+    }
+  },
+  "validation_selected_model": {
+    "MAE": 17431.275390625,
+    "RMSE": 24782.905075878414,
+    "R2": 0.9022146463394165
+  },
+  "official_evaluation_count": 1,
+  "baseline_strategy": "median fitted on Train only; original baseline artifact",
+  "model_changed": false,
+  "tuning_after_test": false
+}

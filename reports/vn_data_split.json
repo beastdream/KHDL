@@ -1,0 +1,70 @@
+{
+  "seed": 42,
+  "rows": 9460,
+  "features": [
+    "size",
+    "floors",
+    "rooms",
+    "toilets",
+    "width",
+    "length",
+    "latitude",
+    "longitude",
+    "district",
+    "house_type",
+    "legal",
+    "direction",
+    "furnishing",
+    "car_alley",
+    "expanding_back"
+  ],
+  "target": "price_billion",
+  "funnel": [
+    {
+      "Bước": "Dữ liệu thu thập (tin không trùng mã)",
+      "Còn lại": 9995,
+      "Bị loại": 0
+    },
+    {
+      "Bước": "Chỉ giữ tin BÁN tại TP.HCM",
+      "Còn lại": 9995,
+      "Bị loại": 0
+    },
+    {
+      "Bước": "Bỏ tin thiếu giá, diện tích hoặc quận",
+      "Còn lại": 9974,
+      "Bị loại": 21
+    },
+    {
+      "Bước": "Bỏ giá ngoài 0,3–300 tỷ hoặc diện tích ngoài 10–1.000 m²",
+      "Còn lại": 9953,
+      "Bị loại": 21
+    },
+    {
+      "Bước": "Bỏ giá/m² ngoài 15–1.500 triệu (nhập sai đơn vị)",
+      "Còn lại": 9797,
+      "Bị loại": 156
+    },
+    {
+      "Bước": "Bỏ tin đăng trùng (cùng phường, diện tích, giá, tầng, phòng)",
+      "Còn lại": 9460,
+      "Bị loại": 337
+    }
+  ],
+  "notes": {
+    "width_length_swapped": 201,
+    "set_to_missing": {
+      "floors": 26,
+      "rooms": 0,
+      "toilets": 0,
+      "width": 4,
+      "length": 6,
+      "latitude/longitude": 5
+    }
+  },
+  "counts": {
+    "train": 6622,
+    "valid": 1419,
+    "test": 1419
+  }
+}

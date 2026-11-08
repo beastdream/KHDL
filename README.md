@@ -33,12 +33,26 @@ Bộ dữ liệu chuẩn từ cuộc thi Kaggle [House Prices - Advanced Regress
 - **Xử lý dữ liệu**: Pandas 2.3.3, NumPy 2.4.6.
 - **Học máy & Pipeline**: Scikit-learn 1.9.1 (`ColumnTransformer`, `SimpleImputer`, `OneHotEncoder`), XGBoost 3.2.0 (hỗ trợ tăng tốc cả CPU và GPU CUDA).
 - **Trực quan hóa**: Matplotlib, Seaborn, Plotly.
-- **Giao diện Web**: Streamlit 1.66.0 hiện đại với 5 phân hệ chuyên sâu.
+- **Giao diện Web**: Streamlit 1.66.0 hiện đại với 6 phân hệ chuyên sâu.
 - **Quy trình chống rò rỉ dữ liệu (Data Leakage Guard)**:
   - Chia tập 70% Train (1,022 dòng), 15% Validation (219 dòng), 15% Holdout Test (219 dòng) với seed 42 cố định.
   - Imputer và Encoder chỉ `fit` duy nhất trên tập Train, sau đó `transform` trên Validation và Test.
   - Tập Holdout Test được đóng băng (freeze) và chỉ đánh giá đúng 1 lần sau khi hoàn thiện mô hình.
-  - Mô hình đạt **MAE ~\$15,000 USD** và hệ số xác định **$R^2 \approx 0.89$** trên tập Test độc lập.
+  - Mô hình đạt **MAE ≈ \$17,171 USD** và hệ số xác định **$R^2 \approx 0.906$** trên tập Test độc lập.
+
+### 1.4. Bộ dữ liệu tự thu thập: nhà ở TP.HCM
+Ngoài bộ Ames, nhóm **tự xây dựng một bộ dữ liệu nhà ở Việt Nam** từ tin bán nhà công khai trên [Nhà Tốt](https://www.nhatot.com), mục "Nhà ở", khu vực TP.HCM. Dữ liệu chỉ dùng cho mục đích học tập.
+
+| Bước | Số tin |
+|---|---:|
+| Thu thập (tin bán, không trùng mã) | 9.995 |
+| Sau làm sạch (bỏ tin thiếu, sai đơn vị, trùng lặp) | **9.460** |
+| Train / Validation / Test (70/15/15, seed 42) | 6.622 / 1.419 / 1.419 |
+
+- **Đặc trưng (15):** diện tích, số tầng, phòng ngủ, WC, mặt tiền, chiều dài, toạ độ, quận/huyện, loại nhà, pháp lý, hướng, nội thất, hẻm xe hơi, nở hậu. Mục tiêu là giá bán (tỷ VNĐ).
+- **Quyền riêng tư:** không lưu tên, tài khoản, ảnh, số nhà hay mô tả của người đăng. Số điện thoại trong tiêu đề được che, toạ độ được làm tròn khoảng 100 m.
+- **So sánh 4 mô hình** (Dummy, Linear Regression, Random Forest, XGBoost) trên log(giá). XGBoost được chọn với kết quả Test **MAE 1,74 tỷ, sai số % trung vị 14,7%, R² 0,75**.
+- Chi tiết: [reports/vn_data_funnel.md](reports/vn_data_funnel.md) (làm sạch) và [reports/vn_model_report.md](reports/vn_model_report.md) (mô hình).
 
 
 
@@ -125,7 +139,10 @@ Tại thư mục gốc của dự án, mở PowerShell và chạy lệnh:
 4. **Hiệu năng mô hình (`Model Performance`)**:
    - So sánh định lượng giữa mô hình Baseline (Dummy Regressor) và mô hình **XGBoost**.
    - Biểu đồ phân tích sai số (Residual Plot), sai số tuyệt đối theo từng phân khúc giá và xếp hạng độ quan trọng đặc trưng (Feature Importance).
-5. **Về dự án (`About`)**:
+5. **Giá nhà TP.HCM**:
+   - Dự đoán giá nhà ở TP.HCM (tỷ VNĐ và triệu/m²) từ mô hình huấn luyện trên dữ liệu tự thu thập, kèm cảnh báo khi giá trị nhập nằm ngoài khoảng thường gặp.
+   - Bảng so sánh 4 mô hình trên tập Validation.
+6. **Về dự án (`About`)**:
    - Giới thiệu nhóm phát triển, thông tin học thuật, giải trình quy trình xây dựng mô hình và tuyên bố miễn trừ trách nhiệm.
 
 ---
@@ -168,6 +185,21 @@ Trong trường hợp bạn muốn tái lập quá trình huấn luyện từ đ
    ```powershell
    .\.venv\Scripts\python.exe -m src.models.evaluate_test
    ```
+
+### Dữ liệu TP.HCM (tự thu thập)
+
+File thô `data/raw/vn_hcm_listings.csv` không đưa lên git. Để tạo lại từ đầu:
+
+```powershell
+# 1. Thu thập khoảng 10.000 tin (khoảng 7 phút, nghỉ 1,5 giây giữa các request)
+.\.venv\Scripts\python.exe -m src.data.vn_collect --max-pages 200
+# 2. Làm sạch và chia Train / Validation / Test
+.\.venv\Scripts\python.exe -m src.data.vn_clean
+# 3. So sánh mô hình, đánh giá Test, lưu artifacts/vn_house_price_model.joblib
+.\.venv\Scripts\python.exe -m src.models.vn_train
+```
+
+Tin đăng thay đổi hằng ngày, nên mỗi lần thu thập sẽ ra dữ liệu và kết quả hơi khác.
 
 ---
 

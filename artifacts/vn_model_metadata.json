@@ -1,0 +1,272 @@
+{
+  "selected_model": "XGBoost (tinh chỉnh CV)",
+  "features": [
+    "size",
+    "floors",
+    "rooms",
+    "toilets",
+    "width",
+    "length",
+    "latitude",
+    "longitude",
+    "district",
+    "house_type",
+    "legal",
+    "direction",
+    "furnishing",
+    "car_alley",
+    "expanding_back"
+  ],
+  "numeric": [
+    "size",
+    "floors",
+    "rooms",
+    "toilets",
+    "width",
+    "length",
+    "latitude",
+    "longitude"
+  ],
+  "categorical": [
+    "district",
+    "house_type",
+    "legal",
+    "direction",
+    "furnishing"
+  ],
+  "binary": [
+    "car_alley",
+    "expanding_back"
+  ],
+  "target": "price_billion",
+  "unit": "tỷ VNĐ",
+  "train_rows": 6622,
+  "valid_rows": 1419,
+  "test_rows": 1419,
+  "validation": {
+    "Dummy (trung vị)": {
+      "MAE": 4.164617358782242,
+      "RMSE": 9.270588138669103,
+      "R2": -0.05161072730424188,
+      "MAPE_%": 69.08933037604587,
+      "MedAPE_%": 37.89473684210526
+    },
+    "Linear Regression (Ridge)": {
+      "MAE": 2.7628315431029797,
+      "RMSE": 16.40249981114143,
+      "R2": -2.2920052260502786,
+      "MAPE_%": 28.942369448225453,
+      "MedAPE_%": 19.563150739137654
+    },
+    "Random Forest": {
+      "MAE": 1.831250662273611,
+      "RMSE": 4.9863245387283746,
+      "R2": 0.6957703652219489,
+      "MAPE_%": 21.348675912855732,
+      "MedAPE_%": 14.468331312354746
+    },
+    "XGBoost (tinh chỉnh CV)": {
+      "MAE": 1.800074018261835,
+      "RMSE": 4.922897841124197,
+      "R2": 0.7034608215066296,
+      "MAPE_%": 20.548136054575327,
+      "MedAPE_%": 14.965308796275744
+    }
+  },
+  "test": {
+    "MAE": 1.7408028070952846,
+    "RMSE": 4.599905696529747,
+    "R2": 0.7526707304138727,
+    "MAPE_%": 20.00373139941983,
+    "MedAPE_%": 14.655709568458272
+  },
+  "test_dummy": {
+    "MAE": 4.213207540522198,
+    "RMSE": 9.459517842259087,
+    "R2": -0.04596140526382442,
+    "MAPE_%": 67.56639859052854,
+    "MedAPE_%": 37.89473684210526
+  },
+  "best_xgb_params": {
+    "subsample": 0.8,
+    "reg_lambda": 5,
+    "n_estimators": 1000,
+    "min_child_weight": 1,
+    "max_depth": 4,
+    "learning_rate": 0.03,
+    "colsample_bytree": 0.7
+  },
+  "best_xgb_cv_mae": 1.7677540224891708,
+  "input_ranges": {
+    "size": [
+      13.0,
+      324.0
+    ],
+    "floors": [
+      1.0,
+      6.0
+    ],
+    "rooms": [
+      1.0,
+      11.0
+    ],
+    "toilets": [
+      1.0,
+      7.0
+    ],
+    "width": [
+      2.65,
+      13.0
+    ],
+    "length": [
+      4.1999,
+      35.39499999999998
+    ]
+  },
+  "districts": [
+    "Huyện Bình Chánh",
+    "Huyện Cần Giờ",
+    "Huyện Củ Chi",
+    "Huyện Hóc Môn",
+    "Huyện Nhà Bè",
+    "Quận 1",
+    "Quận 10",
+    "Quận 11",
+    "Quận 12",
+    "Quận 3",
+    "Quận 4",
+    "Quận 5",
+    "Quận 6",
+    "Quận 7",
+    "Quận 8",
+    "Quận Bình Thạnh",
+    "Quận Bình Tân",
+    "Quận Gò Vấp",
+    "Quận Phú Nhuận",
+    "Quận Tân Bình",
+    "Quận Tân Phú",
+    "Thành phố Thủ Đức"
+  ],
+  "choices": {
+    "house_type": [
+      "Nhà biệt thự",
+      "Nhà mặt phố, mặt tiền",
+      "Nhà ngõ, hẻm",
+      "Nhà phố liền kề"
+    ],
+    "legal": [
+      "Giấy tờ viết tay",
+      "Không có sổ",
+      "Sổ chung / công chứng vi bằng",
+      "Đang chờ sổ",
+      "Đã có sổ"
+    ],
+    "direction": [
+      "Hướng Bắc",
+      "Hướng Nam",
+      "Hướng Tây",
+      "Hướng Tây Bắc",
+      "Hướng Tây Nam",
+      "Hướng Đông",
+      "Hướng Đông Bắc",
+      "Hướng Đông Nam"
+    ],
+    "furnishing": [
+      "Bàn giao thô",
+      "Hoàn thiện cơ bản",
+      "Nội thất cao cấp",
+      "Nội thất đầy đủ"
+    ]
+  },
+  "district_centers": {
+    "Huyện Bình Chánh": {
+      "latitude": 10.723,
+      "longitude": 106.627
+    },
+    "Huyện Cần Giờ": {
+      "latitude": 10.416,
+      "longitude": 106.9595
+    },
+    "Huyện Củ Chi": {
+      "latitude": 10.947,
+      "longitude": 106.594
+    },
+    "Huyện Hóc Môn": {
+      "latitude": 10.876,
+      "longitude": 106.599
+    },
+    "Huyện Nhà Bè": {
+      "latitude": 10.694,
+      "longitude": 106.739
+    },
+    "Quận 1": {
+      "latitude": 10.7715,
+      "longitude": 106.6925
+    },
+    "Quận 10": {
+      "latitude": 10.772,
+      "longitude": 106.668
+    },
+    "Quận 11": {
+      "latitude": 10.764,
+      "longitude": 106.646
+    },
+    "Quận 12": {
+      "latitude": 10.867,
+      "longitude": 106.644
+    },
+    "Quận 3": {
+      "latitude": 10.784,
+      "longitude": 106.68
+    },
+    "Quận 4": {
+      "latitude": 10.757,
+      "longitude": 106.705
+    },
+    "Quận 5": {
+      "latitude": 10.755,
+      "longitude": 106.676
+    },
+    "Quận 6": {
+      "latitude": 10.745,
+      "longitude": 106.632
+    },
+    "Quận 7": {
+      "latitude": 10.74,
+      "longitude": 106.726
+    },
+    "Quận 8": {
+      "latitude": 10.741,
+      "longitude": 106.667
+    },
+    "Quận Bình Thạnh": {
+      "latitude": 10.81,
+      "longitude": 106.698
+    },
+    "Quận Bình Tân": {
+      "latitude": 10.771,
+      "longitude": 106.609
+    },
+    "Quận Gò Vấp": {
+      "latitude": 10.839,
+      "longitude": 106.665
+    },
+    "Quận Phú Nhuận": {
+      "latitude": 10.799,
+      "longitude": 106.681
+    },
+    "Quận Tân Bình": {
+      "latitude": 10.794,
+      "longitude": 106.647
+    },
+    "Quận Tân Phú": {
+      "latitude": 10.786,
+      "longitude": 106.628
+    },
+    "Thành phố Thủ Đức": {
+      "latitude": 10.838,
+      "longitude": 106.765
+    }
+  },
+  "seconds": 167.77621219999992
+}

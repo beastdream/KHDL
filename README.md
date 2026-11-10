@@ -132,7 +132,11 @@ Tại thư mục gốc của dự án, mở PowerShell và chạy lệnh:
 
 ## 5. Kiểm thử hệ thống tự động (Test Suite)
 
-Dự án đi kèm bộ kiểm thử tự động toàn diện gồm **73 bài test** kiểm tra tính toàn vẹn của mã nguồn, mô hình, dữ liệu, bảo mật chống rò rỉ dữ liệu và kiểm thử giao diện.
+Dự án đi kèm bộ kiểm thử tự động toàn diện gồm **87 bài test** kiểm tra tính toàn vẹn của mã nguồn, mô hình, dữ liệu, bảo mật chống rò rỉ dữ liệu và kiểm thử giao diện qua 4 giai đoạn độc lập:
+- **Suite 1 (Tuần 1 - EDA & Data Audit):** 21/21 bài PASS
+- **Suite 2 (Tuần 2 - Baseline & Preservation):** 20/20 bài PASS
+- **Suite 3 (Tuần 3 - Hyperparameter Tuning & UI Views):** 27/27 bài PASS
+- **Suite 4 (Final E2E - Holdout Evaluation & App):** 19/19 bài PASS
 
 Chạy lệnh kiểm thử tổng hợp bằng script điều phối chính sách:
 
@@ -142,9 +146,9 @@ Chạy lệnh kiểm thử tổng hợp bằng script điều phối chính sác
 
 **Kết quả kiểm thử chuẩn:**
 ```text
-{'PASS': 73, 'FAIL': 0, 'SKIPPED': 14}
+{'PASS': 87, 'FAIL': 0, 'SKIPPED': 0}
 ```
-*(14 bài kiểm tra dạng SKIP là các bài kiểm tra lịch sử yêu cầu can thiệp dữ liệu thô, được chủ động bỏ qua theo chính sách bảo toàn dữ liệu).*
+*(100% bài kiểm thử ĐẠT, 0 lỗi, 0 bài bị bỏ qua).*
 
 
 

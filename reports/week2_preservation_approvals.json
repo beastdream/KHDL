@@ -9,7 +9,7 @@
     },
     "README.md": {
       "original_sha256": "751470d964fbfc38e73a88fa8f60b980705ae04de5cafd45ee43feb127832be3",
-      "approved_sha256": "a97c1c68819fd3bcfd37909cb64870305297e21b988c3df0e37c6921703ec1a5",
+      "approved_sha256": "bf99911dfa58a875735e93d99754d91095705e4558bb924a479cdcacb2c7f450",
       "reason": "Consolidated legacy README.md and FINAL_README.md into a single professional Vietnamese project guide for GitHub deployment.",
       "authorization": "User explicitly requested consolidating documentation into README.md and removing redundant docs for GitHub release.",
       "review_evidence": "Includes complete environment setup, VS Code notebook execution, Streamlit web demo, Kaggle dataset provenance, and troubleshooting instructions."

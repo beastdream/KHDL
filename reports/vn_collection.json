@@ -1,0 +1,16 @@
+{
+  "source": "Nhà Tốt (nhatot.com), API công khai ad-listing",
+  "query": {
+    "cg": 1020,
+    "region_v2": 13000,
+    "st": "s",
+    "limit": 50
+  },
+  "collected_at": "2026-11-08T14:24:13.988576+00:00",
+  "pages_requested": 200,
+  "reported_total": 10000,
+  "rows_unique": 9995,
+  "errors": [],
+  "privacy": "Đã bỏ thông tin người đăng; che số điện thoại trong tiêu đề; toạ độ làm tròn 3 chữ số.",
+  "purpose": "Đồ án môn Khoa học Dữ liệu, phi thương mại, không phát tán dữ liệu."
+}

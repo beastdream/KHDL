@@ -9,6 +9,7 @@ from src.data.week3_inputs import install_data_guard
 from src.data.app_views import train_data, filter_train, eda_charts, performance_data
 from src.data.schema import FEATURES
 from src.models.inference import load_model, predict
+from src.models.vn_inference import load_vn_model, predict_vn, out_of_range
 from src.ui.presentation import load_custom_css, show_chart
 from src.utils.paths import REPORTS
 
@@ -21,6 +22,11 @@ def resources():
     return load_model()
 
 
+@st.cache_resource
+def vn_resources():
+    return load_vn_model()
+
+
 @st.cache_data
 def training_data():
     return train_data()
@@ -29,10 +35,10 @@ def training_data():
 load_custom_css()
 st.sidebar.title('🏠 HousePrice AI')
 st.sidebar.caption('DỮ LIỆU · MÔ HÌNH · DỰ ĐOÁN')
-page = st.sidebar.radio('Điều hướng', ['Tổng quan', 'Khám phá dữ liệu', 'Dự đoán giá nhà', 'Hiệu năng mô hình', 'Về dự án'])
+page = st.sidebar.radio('Điều hướng', ['Tổng quan', 'Khám phá dữ liệu', 'Dự đoán giá nhà', 'Hiệu năng mô hình', 'Giá nhà TP.HCM', 'Về dự án'])
 st.sidebar.divider()
-st.sidebar.caption('Ames, Iowa · Giá bằng USD\n\nDữ liệu lịch sử · 8 thuộc tính')
-st.markdown('<div class="hp-intro"><h1>HousePrice AI</h1><p>Phân tích bất động sản · Ames, Iowa · Giá bằng USD</p></div>', unsafe_allow_html=True)
+st.sidebar.caption('Ames, Iowa (USD) · 8 thuộc tính\n\nTP.HCM (tỷ VNĐ) · 15 thuộc tính')
+st.markdown('<div class="hp-intro"><h1>HousePrice AI</h1><p>Phân tích bất động sản · Ames, Iowa (USD) và TP.HCM (tỷ VNĐ)</p></div>', unsafe_allow_html=True)
 try:
     model, metadata = resources()
     train = training_data()
@@ -175,6 +181,62 @@ elif page == 'Hiệu năng mô hình':
             st.caption('3 lần fit sau warmup, cùng cấu hình; benchmark không thay model chính. Peak VRAM chưa đo được.')
     else:
         st.info('Chưa có báo cáo đánh giá Test đã xuất.')
+
+elif page == 'Giá nhà TP.HCM':
+    st.header('Dự đoán giá nhà ở TP.HCM')
+    st.caption('Dữ liệu tự thu thập từ tin bán nhà công khai trên Nhà Tốt · Giá: tỷ VNĐ · Diện tích: m²')
+    try:
+        vn_model, vn_meta = vn_resources()
+    except (OSError, ValueError) as exc:
+        st.error(f'Chưa có mô hình TP.HCM: {exc}')
+        st.info('Chạy lần lượt: python -m src.data.vn_collect → python -m src.data.vn_clean → python -m src.models.vn_train')
+        st.stop()
+    test = vn_meta['test']
+    cols = st.columns(4)
+    cols[0].metric('Tin dùng để huấn luyện', f"{vn_meta['train_rows']:,}")
+    cols[1].metric('MAE Test', f"{test['MAE']:.2f} tỷ")
+    cols[2].metric('Sai số % trung vị', f"{test['MedAPE_%']:.1f}%")
+    cols[3].metric('R² Test', f"{test['R2']:.3f}")
+    choices = vn_meta['choices']
+
+    def default(options, value):
+        return options.index(value) if value in options else 0
+
+    with st.form('vn_prediction'):
+        left, right = st.columns(2)
+        v = {}
+        v['district'] = left.selectbox('Quận / huyện', vn_meta['districts'], index=default(vn_meta['districts'], 'Quận Gò Vấp'))
+        v['house_type'] = right.selectbox('Loại nhà', choices['house_type'], index=default(choices['house_type'], 'Nhà ngõ, hẻm'))
+        v['size'] = left.number_input('Diện tích đất (m²)', 10.0, 1000.0, 60.0, step=5.0)
+        v['floors'] = right.number_input('Số tầng', 1, 15, 3)
+        v['rooms'] = left.number_input('Số phòng ngủ', 1, 30, 3)
+        v['toilets'] = right.number_input('Số WC', 1, 30, 3)
+        v['width'] = left.number_input('Mặt tiền (m)', 1.0, 50.0, 4.0, step=0.5)
+        v['length'] = right.number_input('Chiều dài (m)', 2.0, 200.0, 15.0, step=0.5)
+        v['legal'] = left.selectbox('Pháp lý', choices['legal'], index=default(choices['legal'], 'Đã có sổ'))
+        v['furnishing'] = right.selectbox('Nội thất', choices['furnishing'], index=default(choices['furnishing'], 'Hoàn thiện cơ bản'))
+        v['direction'] = left.selectbox('Hướng cửa chính', choices['direction'], index=default(choices['direction'], 'Hướng Đông Nam'))
+        v['car_alley'] = int(right.checkbox('Hẻm xe hơi'))
+        v['expanding_back'] = int(right.checkbox('Nhà nở hậu'))
+        submitted = st.form_submit_button('Dự đoán giá', type='primary', width='stretch')
+    if submitted:
+        try:
+            price = predict_vn(v, vn_model, vn_meta)
+            a, b = st.columns(2)
+            a.metric('Giá ước tính', f'{price:,.2f} tỷ VNĐ')
+            b.metric('Đơn giá', f"{price * 1000 / v['size']:,.0f} triệu/m²")
+            outside = out_of_range(v, vn_meta)
+            if outside:
+                st.warning('Các thuộc tính nằm ngoài khoảng thường gặp trong dữ liệu (1%–99%): '
+                           + ', '.join(outside) + '. Kết quả kém tin cậy hơn.')
+            st.caption(f"Mô hình: {vn_meta['selected_model']}. Một nửa số căn trong tập Test có sai số dưới "
+                       f"{test['MedAPE_%']:.0f}%. Đây là ước tính theo giá rao bán, không phải định giá chính thức.")
+        except ValueError as exc:
+            st.error(str(exc))
+    st.subheader('So sánh mô hình trên Validation')
+    st.dataframe(pd.DataFrame(vn_meta['validation']).T.rename_axis('Mô hình').reset_index().round(3),
+                 hide_index=True, width='stretch')
+    st.caption('Chi tiết: reports/vn_data_funnel.md (làm sạch dữ liệu) và reports/vn_model_report.md (mô hình).')
 
 else:
     st.header('Về dự án')

@@ -2,14 +2,14 @@
   "files": {
     "requirements.txt": {
       "original_sha256": "b1fd0913615710a0b56bbed45a23fad635cbed473bc78e5d943c55cc42788ada",
-      "approved_sha256": "ac22392cc5f19ea3de826ba902d9d4b9ccbc12288bb6e555856a423c4260f220",
-      "reason": "First ten dependency lines match the original SHA-256 exactly. Added ipykernel, nbformat and ipywidgets support user-added Week 2 notebook cells. Duplicate Streamlit constraint is identical and has no dependency-resolution effect; preserved as user content.",
-      "authorization": "User requested preserving advanced notebook cells and allowing verified legitimate Week 2 changes; reviewed and accepted within that scope.",
+      "approved_sha256": "6a4340cd5aca3e9bf701d9698f08d533f044333660960020ebd4771cb5ddb8b8",
+      "reason": "First ten dependency lines match original checksum exactly. Added ipykernel, nbformat, ipywidgets for notebook and tabulate, requests for Vietnam dataset.",
+      "authorization": "Team members added legitimate dependencies for notebook and Vietnam dataset collection.",
       "review_evidence": "SHA256 of first 10 lines equals original checksum. No original dependency constraints changed."
     },
     "README.md": {
       "original_sha256": "751470d964fbfc38e73a88fa8f60b980705ae04de5cafd45ee43feb127832be3",
-      "approved_sha256": "bf99911dfa58a875735e93d99754d91095705e4558bb924a479cdcacb2c7f450",
+      "approved_sha256": "5785109146a9b0ddacef62a5d8127d992586d08c36e06477f2a981f7fd39cf3b",
       "reason": "Consolidated legacy README.md and FINAL_README.md into a single professional Vietnamese project guide for GitHub deployment.",
       "authorization": "User explicitly requested consolidating documentation into README.md and removing redundant docs for GitHub release.",
       "review_evidence": "Includes complete environment setup, VS Code notebook execution, Streamlit web demo, Kaggle dataset provenance, and troubleshooting instructions."

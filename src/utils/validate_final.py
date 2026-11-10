@@ -10,7 +10,7 @@ def main():
         (None, ['tests/test_week1.py'], 'final_week1_pytest.xml'),
         ('tests.week2_policy', ['tests/test_model.py', 'tests/test_gpu_training.py', 'tests/test_preservation_policy.py'], 'final_legacy_pytest.xml'),
         ('tests.week3_policy', ['tests/test_model_tuning.py', 'tests/test_model_selection.py', 'tests/test_inference.py', 'tests/test_app.py'], 'final_week3_pytest.xml'),
-        ('tests.final_policy', ['tests/test_end_to_end.py'], 'final_e2e_pytest.xml')]
+        ('tests.final_policy', ['tests/test_end_to_end.py', 'tests/test_vn_data.py'], 'final_e2e_pytest.xml')]
     failed = False
     combined = ET.Element('testsuites')
     for policy, files, output in suites:

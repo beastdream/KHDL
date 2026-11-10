@@ -172,16 +172,19 @@ def test_preservation_and_seven_exported_charts():
         assert (REPORTS / f'figures/final/{name}.png').read_bytes().startswith(b'\x89PNG')
 
 
-def test_streamlit_five_pages_and_final_performance():
+def test_streamlit_all_pages_and_final_performance():
     app = AppTest.from_file(str(ROOT / 'app.py'), default_timeout=60).run()
     assert not app.exception
-    assert len(app.sidebar.radio[0].options) == 5
+    assert len(app.sidebar.radio[0].options) == 6  # 5 trang Ames + 1 trang TP.HCM
     for name in app.sidebar.radio[0].options:
         app.sidebar.radio[0].set_value(name).run()
         assert not app.exception, name
         if name == 'Dự đoán giá nhà':
             app.button[0].click().run()
             assert not app.exception and any('USD' in m.value for m in app.metric)
+        if name == 'Giá nhà TP.HCM':
+            app.button[0].click().run()
+            assert not app.exception and any('tỷ VNĐ' in m.value for m in app.metric)
         if name == 'Hiệu năng mô hình':
             assert any(m.label == 'Test R²' for m in app.metric)
             assert len(app.image) == 7
